@@ -1,0 +1,7 @@
+{{#if loggedIn}}
+{{#each galleries as |gallery|}}
+{{> gallery-details}}
+{{/each}}
+{{else}}
+<a href="/login">you must log in first</a>
+{{/if}}
